@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class Explode {
     private int x, y;
-    private boolean live = true;
     TankFrame tf = null;
     private int step = 0;
 
@@ -21,7 +20,9 @@ public class Explode {
 
     public void paint(Graphics g){
         g.drawImage(ResourceMgr.explodes[step++], x, y, null);
-        if(step >= ResourceMgr.explodes.length) step = 0;
+        if(step >= ResourceMgr.explodes.length) {
+            tf.explodes.remove(this);
+        }
     }
 
 }

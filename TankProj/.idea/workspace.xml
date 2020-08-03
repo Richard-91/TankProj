@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -74,6 +74,8 @@
       <workItem from="1596295491105" duration="174000" />
       <workItem from="1596295677770" duration="9273000" />
       <workItem from="1596378841959" duration="875000" />
+      <workItem from="1596380256687" duration="10323000" />
+      <workItem from="1596467124441" duration="2530000" />
     </task>
     <servers />
   </component>
@@ -81,6 +83,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="515" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596395204217">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="515" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596395204217" />
     <state x="223" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1596310679961">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -89,25 +95,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596210738780" />
-    <state width="1493" height="8" key="GridCell.Tab.0.bottom" timestamp="1596312994782">
+    <state width="1493" height="8" key="GridCell.Tab.0.bottom" timestamp="1596396952982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="8" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596312994782" />
-    <state width="1493" height="8" key="GridCell.Tab.0.center" timestamp="1596312994782">
+    <state width="1493" height="8" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596396952982" />
+    <state width="1493" height="8" key="GridCell.Tab.0.center" timestamp="1596396952982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="8" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596312994782" />
-    <state width="1493" height="8" key="GridCell.Tab.0.left" timestamp="1596312994782">
+    <state width="1493" height="8" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596396952982" />
+    <state width="1493" height="8" key="GridCell.Tab.0.left" timestamp="1596396952982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="8" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596312994782" />
-    <state width="1493" height="8" key="GridCell.Tab.0.right" timestamp="1596312994782">
+    <state width="1493" height="8" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596396952982" />
+    <state width="1493" height="8" key="GridCell.Tab.0.right" timestamp="1596396952982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="8" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596312994782" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596294815625">
+    <state width="1493" height="8" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596396952982" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596468446482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596294815625" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596468446482" />
   </component>
 </project>

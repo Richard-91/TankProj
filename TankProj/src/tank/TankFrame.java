@@ -10,11 +10,11 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TankFrame extends Frame {
-    static final int GAME_WIDTH = 800, GAME_HEIGHT = 600;
+    static final int GAME_WIDTH = 1300, GAME_HEIGHT = 800;
     Tank myTank = new Tank(200,400, Dir.DOWN, Group.GOOD, this);
     List<Bullet> bullets = new ArrayList<>();
     List<Tank> tanks = new ArrayList<>();
-    Explode explode = new Explode(100, 100, this);
+    List<Explode> explodes = new ArrayList<>();
 
     public TankFrame(){
         this.setSize(GAME_WIDTH,GAME_HEIGHT);
@@ -55,11 +55,13 @@ public class TankFrame extends Frame {
         g.setColor(Color.WHITE);
         g.drawString("子弹的数量："+bullets.size(), 10,60);
         g.drawString("敌人的数量："+tanks.size(), 10,80);
+        g.drawString("爆炸的数量："+explodes.size(), 10,100);
         g.setColor(c);
 
 
         //画出坦克
         myTank.paint(g);
+
 
         //画出子弹
         //用集合内部的迭代器iterator进行迭代，不能在迭代器外部进行删除，只能允许迭代器自身进行删除
@@ -76,18 +78,24 @@ public class TankFrame extends Frame {
 //            if(!b.live) it.remove();
 //        }
 
+
         //画出敌人坦克
         for(int i=0; i<tanks.size(); i++){
             tanks.get(i).paint(g);
         }
 
+        //画出爆炸
+        for(int i=0; i<explodes.size(); i++){
+            explodes.get(i).paint(g);
+        }
+
+        //子弹和坦克碰撞检测
         for(int i=0; i<bullets.size(); i++){
             for(int j=0; j<tanks.size(); j++){
                 bullets.get(i).collideWith(tanks.get(j));
             }
         }
 
-        explode.paint(g);
     }
 
     class MyKeyListener extends KeyAdapter{

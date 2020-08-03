@@ -1,5 +1,7 @@
 package tank;
 
+import org.w3c.dom.css.Rect;
+
 import java.awt.*;
 
 public class Bullet {
@@ -13,12 +15,15 @@ public class Bullet {
     private TankFrame tf = null;
     private Group group = Group.BAD;
 
+    Rectangle rect = null;
+
     public Bullet(int x, int y, Dir dir, Group group, TankFrame tf) {
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
         this.tf = tf;
+        this.rect = new Rectangle(x, y, WIDTH, HEIGHT);
     }
 
     public Group getGroup() {
@@ -67,16 +72,24 @@ public class Bullet {
                 y += SPEED;
                 break;
         }
+
+        //update rect
+        rect.x = this.x;
+        rect.y = this.y;
+
+        //子弹打出边界，删掉子弹
         if(x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT) live = false;
     }
 
     public void collideWith(Tank tank) {
         if(this.group == tank.getGroup()) return;
-        Rectangle rect1 = new Rectangle(this.x, this.y, this.WIDTH, this.HEIGHT);
-        Rectangle rect2 = new Rectangle(tank.getX(), tank.getY(), tank.WIDTH, tank.HEIGHT);
-        if(rect1.intersects(rect2)){
+        if(rect.intersects(tank.rect)){
             this.die();
             tank.die();
+            //计算爆炸的中心点
+            int eX = tank.getX() + tank.WIDTH/2 - Explode.WIDTH/2;
+            int eY = tank.getY() + tank.HEIGHT/2 - Explode.HEIGHT/2;
+            tf.explodes.add(new Explode(eX, eY, tf));
         }
     }
 
