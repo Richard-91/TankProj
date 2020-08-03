@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyMgr {
+    //在design_pattern分支里修改
     private static volatile Properties props = null;//要加valatile，防止指令重排序
     private PropertyMgr(){
 
