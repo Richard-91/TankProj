@@ -4,19 +4,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyMgr {
-//    static Properties props = new Properties();
-//    static {
-//        try {
-//            props.load(PropertyMgr.class.getClassLoader().getResourceAsStream("config"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//    public static Object get(String key){
-//        if(props == null) return null;
-//        return props.get(key);
-//    }
-
     private static volatile Properties props = null;//要加valatile，防止指令重排序
     private PropertyMgr(){
 
